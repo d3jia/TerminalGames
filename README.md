@@ -8,18 +8,7 @@ A collection of classic board games and card games that can be played in the ter
 - **Gomoku**: Also known as Five in a Row, played on a 15x15 board where players try to get 5 pieces in a row
 - **Blackjack**: The popular casino card game where players try to get as close to 21 as possible without going over
 
-    # Get bet amount
-    while True:
-        try:
-            bet = input("\nEnter bet amount (or 'q' to quit): ").lower()
-            if bet in ['q', 'exit']:
-                return
-            bet = int(bet)
-            if bet > 0 and wallet.place_bet(bet):
-                break
-            print("Invalid bet amount.")
-        except ValueError:
-            print("Please enter a valid number.")## Features
+## Features
 
 - Colorful terminal interface
 - Player vs Player modes for board games
